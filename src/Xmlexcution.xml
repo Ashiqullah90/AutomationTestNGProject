@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="adhoc" parallel= "tests" thread-count= "6"> 
+<listeners>
+ <listener class-name = "com.Ilistners.Ilistener"></listener>
+
+</listeners>
+
+<test name = "Ashiq">
+<parameter name ="browser" value="Chrome"></parameter>
+<parameter name ="URL" value ="https://www.facebook.com"></parameter>
+<classes>
+<!--  <class name="DependencyParametrizing.FacobookAmazon"></class>
+<class name="PageObjectDependentMethod.AssertHomePageText"></class>-->
+<class name= "IListnersDataProvider.provider"></class>
+</classes>
+</test>
+<!--  <test name = "firfox">
+<parameter name ="browser" value="Firefox"></parameter>
+<parameter name ="URL" value ="https://www.facebook.com"></parameter>
+<classes>
+<class name="DependencyParametrizing.FacobookAmazon"></class>
+<class name="PageObjectDependentMethod.AssertHomePageText"></class>
+</classes>
+</test>
+<parameter name ="browser" value="Edge"></parameter>
+<parameter name ="URL" value ="https://www.facebook.com"></parameter>
+<test name = "edge">
+<classes>
+<class name="DependencyParametrizing.FacobookAmazon"></class>
+<class name="PageObjectDependentMethod.AssertHomePageText"></class>
+</classes>
+</test>-->
+</suite>

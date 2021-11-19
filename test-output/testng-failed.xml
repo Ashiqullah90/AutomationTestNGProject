@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [adhoc]" guice-stage="DEVELOPMENT">
+  <test thread-count="6" parallel="tests" name="Ashiq(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="URL" value="https://www.facebook.com"/>
+    <classes>
+      <class name="IListnersDataProvider.provider">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="f"/>
+          <include name="f"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- IListnersDataProvider.provider -->
+    </classes>
+  </test> <!-- Ashiq(failed) -->
+</suite> <!-- Failed suite [adhoc] -->
